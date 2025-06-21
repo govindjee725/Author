@@ -113,9 +113,9 @@ const Navbar = () => {
             )}
           </div>
           
-          <Link to="/news" className="text-white hover:text-gray-200">
+          {/* <Link to="/news" className="text-white hover:text-gray-200">
             News
-          </Link>
+          </Link> */}
           <Link to="/about" className="text-white hover:text-gray-200">
             About
           </Link>
