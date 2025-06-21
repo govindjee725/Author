@@ -12,7 +12,7 @@ const authRoutes = require('./routes/auth');
 const errorHandler = require('./middleware/errorMiddleware');
 require("./config/passport")(passport);
 const nodemailer = require("nodemailer");
-const { sendSubscriptionEmail } = require("./config/emailservice");
+const { sendSubscriptionEmail } = require("./config/emailService");
 // Import routes
 const bookRoutes = require('../backend/routes/bookRoutes');
 
