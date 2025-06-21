@@ -4,7 +4,7 @@ import axios from "axios";
 const Logout = () => {
   const handleLogout = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/auth/logout");
+      const response = await axios.get(`${import.meta.env.VITE_API_URL}/auth/logout`);
       alert(response.data.message);
     } catch (err) {
       alert("Logout failed");

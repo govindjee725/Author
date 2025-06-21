@@ -12,7 +12,7 @@ const HomePage = () => {
       }
   
       try {
-        const response = await axios.post("http://localhost:5000/subscribe", { email });
+        const response = await axios.post(`${import.meta.env.VITE_API_URL}/subscribe`, { email });
         setMessage(response.data.message);
         setEmail(""); // Clear input after submission
       } catch (error) {
