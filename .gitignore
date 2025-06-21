@@ -1,0 +1,11 @@
+# .gitignore
+# Ignore Node modules
+node_modules/
+
+# Ignore environment files
+.env
+backend/.env
+frontend/.env
+
+# Ignore build files
+frontend/build/

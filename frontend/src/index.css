@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Gradient background */
+.bg-primaryGreen {
+    background: linear-gradient(to right, #28a745, #218838);
+  }
+  
+  /* Navbar links hover effect */
+  .navbar a:hover,
+  .navbar button:hover {
+    color: #218838;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Dropdown animation */
+  .dropdown-enter {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .dropdown-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .dropdown-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .dropdown-exit-active {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  
+  /* Hero Section */
+.hero-section {
+  background: linear-gradient(90deg, #4e79a7, #59a14f);
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+/* About Section */
+.about-section {
+  background: #f8f9fa;
+  color: #212529;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+/* Featured Books Section */
+.featured-books {
+  background: white;
+  padding: 3rem 1rem;
+}
+
+.featured-book-card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.featured-book-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Buttons */
+.button {
+  background-color: #ff6f61;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #e85b52;
+}
